@@ -96,7 +96,6 @@
           "@phpcs",
           "@phpunit",
           "@phpstan",
-          "@deptrac",
           "@behat"
         ]
     },
