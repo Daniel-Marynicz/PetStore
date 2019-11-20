@@ -1,0 +1,13 @@
+default:
+    suites:
+        ui:
+            contexts:
+            - behatch:context:debug:
+                screenshotDir: "var/log"
+            - behatch:context:browser:
+                    timeout: 10
+            - App\Tests\Behat\Context\DatabaseContext
+            - App\Tests\Behat\Context\FeatureContext
+            - Behat\MinkExtension\Context\MinkContext
+            filters:
+                tags: "@ui"
