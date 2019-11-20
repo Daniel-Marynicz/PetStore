@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PetStore index{% endblock %}
+
+{% block body %}
+    <h1>PetStore index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for pet_store in pet_stores %}
+            <tr>
+                <td>{{ pet_store.id }}</td>
+                <td>{{ pet_store.name }}</td>
+                <td>{{ pet_store.surname }}</td>
+                <td>
+                    <a href="{{ path('pet_store_show', {'id': pet_store.id}) }}">show</a>
+                    <a href="{{ path('pet_store_edit', {'id': pet_store.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('pet_store_new') }}">Create new</a>
+{% endblock %}

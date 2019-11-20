@@ -13,7 +13,6 @@ App uses a number of open source projects to work properly:
 * [PHPUnit] The PHP Testing Framework
 * [Behat] A php framework for autotesting your business expectations.
 * [PHPStan] PHP Static Analysis Tool - discover bugs in your code without running it!
-* [Deptrac] Keep your architecture clean.
 
 ### Coding standards
 
@@ -30,8 +29,8 @@ You need install latest versions of these apps.
 
 Then you have to copy:
 - `.env.docker.dist` to `.env.docker`
-- Create an empty `.env.local` or create copy from `.env` to `.env.local`
-- Edit copied files for your needs.
+- (optional step) Create an empty `.env.local` or create copy from `.env` to `.env.local`
+- (optional step) Edit copied files for your needs.
 
 Build Docker instance with:
 
@@ -82,6 +81,6 @@ PROPRIETARY
    [Doctrine Coding Standard]:   <https://github.com/doctrine/coding-standard>
    [PSR2]:   <https://www.php-fig.org/psr/psr-2/>
    [Behat]: <https://behat.org/>
-   [Deptrac]: <https://github.com/sensiolabs-de/deptrac>
+
 
 

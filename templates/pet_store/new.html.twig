@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New PetStore{% endblock %}
+
+{% block body %}
+    <h1>Create new PetStore</h1>
+
+    {{ include('pet_store/_form.html.twig') }}
+
+    <a href="{{ path('pet_store_index') }}">back to list</a>
+{% endblock %}

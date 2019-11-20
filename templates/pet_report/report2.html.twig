@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Pet Report 2{% endblock %}
+
+{% block body %}
+    <h1>Pet Report 2</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>owner name</th>
+            <th>owned pets</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for result in results %}
+            <tr>
+                <td>{{ result.ownerName }}</td>
+                <td>{{ result.ownedPets }}</td>
+            </tr>
+
+        {% else %}
+            <tr>
+                <td colspan="3">no results found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+
+{% endblock %}
+

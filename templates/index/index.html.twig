@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Index{% endblock %}
+
+{% block body %}
+    <h1>Index</h1>
+
+
+    <ul>
+        <li>
+            <a href="{{ path('pet_store_new')}}">4. Create new Pet Store</a>
+
+
+        </li>
+        <li>
+            <a href="{{ path('pet_add_index')}}">5. Add Pet to  given owner.</a>
+        </li>
+        <li>
+            <a href="{{ path('pet_report_1')}}">6. report 1.</a>
+        </li>
+        <li>
+            <a href="{{ path('pet_report_2')}}">7. report 2.</a>
+        </li>
+    </ul>
+
+
+
+
+{% endblock %}

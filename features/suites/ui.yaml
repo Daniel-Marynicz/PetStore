@@ -9,5 +9,7 @@ default:
             - App\Tests\Behat\Context\DatabaseContext
             - App\Tests\Behat\Context\FeatureContext
             - Behat\MinkExtension\Context\MinkContext
+            - App\Tests\Behat\Context\PetStoreContext
+            - App\Tests\Behat\Context\TableAssertContext
             filters:
                 tags: "@ui"
