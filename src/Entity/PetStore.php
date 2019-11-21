@@ -35,6 +35,7 @@ class PetStore
     /**
      * @ORM\Column(type="string", length=255)
      *
+     * @Assert\NotBlank()
      * @var string|null
      */
     private $name;
@@ -42,6 +43,7 @@ class PetStore
     /**
      * @ORM\Column(type="string", length=255)
      *
+     * @Assert\NotBlank()
      * @var string|null
      */
     private $surname;
